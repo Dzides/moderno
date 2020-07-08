@@ -236,9 +236,11 @@
          @include f500;
       }
    }
-   &-star{
+
+   &-star {
       font-size: 12px;
-      span{
+
+      span {
          color: $bg;
       }
    }
@@ -266,21 +268,25 @@
 
 // Слайдер
 
-.product-slider{
+.product-slider {
    padding: 110px 0px 12px;
-   .slick-dots{
+
+   .slick-dots {
       text-align: center;
       margin-top: 50px;
-      li{
+
+      li {
          display: inline-block;
          margin-left: 3px;
          margin-right: 3px;
-         &.slick-active{
-            button{
+
+         &.slick-active {
+            button {
                background-color: $green;
             }
          }
-         button{
+
+         button {
             border-radius: 50%;
             background-color: rgb(232, 232, 232);
             border: none;
@@ -296,38 +302,46 @@
 
 // Advantages
 
-.advantages{
+.advantages {
    background-color: $bg;
    padding: 110px 0px;
 }
-.advantages__title{
+
+.advantages__title {
    color: #fff;
 }
+
 .advantages__inner {
    display: flex;
    justify-content: space-between;
 }
-.advantages__item{
+
+.advantages__item {
    max-width: 370px;
    text-align: center;
    padding: 0px 15px;
-   &:hover{
-      .advantages__item-images{
+
+   &:hover {
+      .advantages__item-images {
          background-color: $green;
       }
-      .advantages__item-title{
+
+      .advantages__item-title {
          color: $green;
       }
-      .advantages__item-images{
-         .cls-1{
+
+      .advantages__item-images {
+         .cls-1 {
             fill: #fff;
          }
-         stop{
-            stop-color:#fff;
+
+         stop {
+            stop-color: #fff;
          }
       }
    }
-   &-images{
+
+   &-images {
       width: 114px;
       height: 114px;
       background-color: #fff;
@@ -338,29 +352,72 @@
       margin: 0px auto 30px;
       transition: all 0.5s;
    }
-   &-title{
+
+   &-title {
       margin-bottom: 25px;
       color: #fff;
       @include f500;
       font-size: 24px;
       transition: all 0.5s;
    }
-   &-text{
+
+   &-text {
       font-size: 15px;
    }
 }
-.icosvg-1{
-   svg{
-     width: 75px;
+
+.icosvg-1 {
+   svg {
+      width: 75px;
    }
 }
-.icosvg-2{
-   svg{
-     width: 70px;
+
+.icosvg-2 {
+   svg {
+      width: 70px;
    }
 }
-.icosvg-3{
-   svg{
-     width: 80px;
+
+.icosvg-3 {
+   svg {
+      width: 80px;
+   }
+}
+
+// author
+
+.author {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 750px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__box {
+      max-width: 650px;
+      width: 100%;
+      min-height: 215px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $green;
+   }
+   &__title{
+      font-size: 30px;
+      line-height: 30px;
+      color: #fff;
+      margin-right: 45px;
+      max-width: 260px;
+      span{
+         @include f700;
+      }
+   }
+   &__link{
+      font-size: 18px;
+      line-height: 36px;
+      padding: 14px 40px;
+      background-color: #fff;
    }
 }
