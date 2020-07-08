@@ -82,14 +82,14 @@
 
    &-title {
       margin-bottom: 10px;
-      font-weight: 700;
+      @include f700;
       font-size: 48px;
       line-height: 72px;
    }
 
    &-text {
       margin-bottom: 50px;
-      font-weight: 500;
+      @include f500;
       font-size: 20px;
       line-height: 30px;
    }
@@ -107,11 +107,11 @@
          height: 56px;
          border: none;
          font-size: 14px;
-         font-weight: 500;
+         @include f500;
 
          &::placeholder {
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
          }
       }
 
@@ -181,7 +181,7 @@
       justify-content: space-between;
       padding: 10px 30px;
       align-items: center;
-      font-weight: 500;
+      @include f500;
       min-height: 90px;
       color: $bg;
       border-bottom: 1px solid #e7ecf2;
@@ -204,7 +204,7 @@
 
    &-price {
       font-size: 20px;
-      font-weight: 700;
+      @include f700;
    }
 
    &-info {
@@ -233,7 +233,7 @@
 
       span {
          font-size: 14px;
-         font-weight: 500;
+         @include f500;
       }
    }
    &-star{
@@ -291,5 +291,76 @@
             outline: none;
          }
       }
+   }
+}
+
+// Advantages
+
+.advantages{
+   background-color: $bg;
+   padding: 110px 0px;
+}
+.advantages__title{
+   color: #fff;
+}
+.advantages__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.advantages__item{
+   max-width: 370px;
+   text-align: center;
+   padding: 0px 15px;
+   &:hover{
+      .advantages__item-images{
+         background-color: $green;
+      }
+      .advantages__item-title{
+         color: $green;
+      }
+      .advantages__item-images{
+         .cls-1{
+            fill: #fff;
+         }
+         stop{
+            stop-color:#fff;
+         }
+      }
+   }
+   &-images{
+      width: 114px;
+      height: 114px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto 30px;
+      transition: all 0.5s;
+   }
+   &-title{
+      margin-bottom: 25px;
+      color: #fff;
+      @include f500;
+      font-size: 24px;
+      transition: all 0.5s;
+   }
+   &-text{
+      font-size: 15px;
+   }
+}
+.icosvg-1{
+   svg{
+     width: 75px;
+   }
+}
+.icosvg-2{
+   svg{
+     width: 70px;
+   }
+}
+.icosvg-3{
+   svg{
+     width: 80px;
    }
 }
