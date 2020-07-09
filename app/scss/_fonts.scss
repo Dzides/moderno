@@ -1,7 +1,55 @@
 @font-face {
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
          url('../fonts/Roboto-Regular.woff') format('woff');
          font-weight: 400;
          font-display: swap;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ngp7vu');
+    src:  url('../fonts/icomoon.eot?ngp7vu#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ngp7vu') format('truetype'),
+      url('../fonts/icomoon.woff?ngp7vu') format('woff'),
+      url('../fonts/icomoon.svg?ngp7vu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+  .icon-shopping-cart:before {
+    content: "\f07a";
+  }
+  .icon-phone:before {
+    content: "\f095";
+  }
+  .icon-bolt:before {
+    content: "\f0e7";
+  }
+  .icon-flash:before {
+    content: "\f0e7";
+  }
+  .icon-angle-right:before {
+    content: "\f105";
+  }
+  .icon-location-arrow:before {
+    content: "\f124";
+  }
+  

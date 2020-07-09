@@ -108,6 +108,7 @@
          border: none;
          font-size: 14px;
          @include f500;
+         padding-left: 25px;
 
          &::placeholder {
             color: #90a4ae;
@@ -404,17 +405,20 @@
       justify-content: center;
       background-color: $green;
    }
-   &__title{
+
+   &__title {
       font-size: 30px;
       line-height: 30px;
       color: #fff;
       margin-right: 45px;
       max-width: 265px;
-      span{
+
+      span {
          @include f700;
       }
    }
-   &__link{
+
+   &__link {
       font-size: 18px;
       line-height: 36px;
       padding: 14px 40px;
@@ -424,31 +428,215 @@
 
 // Tutorial
 
-.tutorial{
+.tutorial {
    padding: 70px 0px 120px;
-   &__inner{
+
+   &__inner {
       display: flex;
       justify-content: space-between;
    }
-   &__item{
+
+   &__item {
       max-width: 370px;
       width: 100%;
    }
 }
-.tutorial__item{
-   &-images{
+
+.tutorial__item {
+   &-images {
       min-height: 270px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
    }
-   &-title{
+
+   &-title {
       background-color: #f8f8f8;
       @include f700;
       font-size: 24px;
       text-align: center;
       padding: 30px 10px;
       color: $bg;
+   }
+}
+
+// Footer
+
+.footer {
+   background-color: $bg;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0px 80px;
+   }
+}
+
+.footer__copy {
+   border-top: 1px solid #424d53;
+
+   &-text {
+      text-align: center;
+      font-size: 15px;
+      color: #919699;
+      padding: 25px 0px;
+   }
+}
+
+.footer__col {
+   max-width: 270px;
+   width: 100%;
+
+   &-menu {
+      max-width: 220px;
+   }
+
+   &-title {
+      font-size: 22px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 2px;
+         width: 51px;
+         height: 3px;
+         background-color: $green;
+      }
+   }
+
+   &-text {
+      color: #b7c3c8;
+      margin-bottom: 30px;
+   }
+
+   &-list {
+      a {
+         margin-bottom: 13px;
+         color: #a1adb1;
+         padding-left: 22px;
+         position: relative;
+
+         &::before {
+            content: "\f105";
+            font-family: 'icomoon';
+            color: $green;
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+         }
+      }
+   }
+
+}
+
+.footer__info {
+   margin-top: 18px;
+   @include f500;
+   color: #fff;
+   padding-left: 30px;
+   position: relative;
+
+   &::before {
+      content: "\f041";
+      font-family: 'icomoon';
+      color: $green;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+   }
+
+   &-phone {
+      &::before {
+         content: "\f095";
+      }
+   }
+}
+
+.footer__social-link {
+   margin-bottom: 33px;
+
+   li {
+      display: inline-block;
+      &+li {
+         margin-left: 7px;
+      }
+   }
+
+   a {
+      width: 29px;
+      height: 28px;
+      background-image: url(../images/css_sprites.png);
+
+      
+   }
+}
+
+.link-facebook {
+   background-position: -1px -1px;
+}
+
+.link-twitter {
+   background-position: -30px -1px;
+}
+
+.link-youtube {
+   background-position: -1px 28px;
+}
+
+.link-pinteres {
+   background-position: -120px 29px;
+}
+
+.link-linledin {
+   background-position: -60px -1px;
+}
+.footer__form-title{
+   margin-bottom: 15px;
+   color: #fff;
+   font-size: 20px;
+}
+.footer__form{
+   position: relative;
+   input{
+      border: none;
+      background-color: #2f3c43;
+      display: block;
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 13px;
+      padding-right: 50px;
+      &::placeholder{
+         color: #697378;
+      }
+   }
+   button{
+      position: absolute;
+      height: 40px;
+      width: 43px;
+      bottom: 0;
+      right: 0;
+      background-color: $green;
+      border: 0;
+      cursor: pointer;
+
+      &::before{
+         content: "\f124";
+         font-family: 'icomoon';
+         // position: absolute;
+         // top: 7px;
+         // left: 12px;
+         color: #fff;
+         font-size: 22px;
+      }
    }
 }
 
