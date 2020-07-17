@@ -1,0 +1,31 @@
+@media (max-width: 1150px){
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__col-adress{
+        margin-bottom: 30px;
+        min-width: 100%;
+        a {
+            display: block;
+        }
+    }
+}
+@media (max-width: 900px){
+    .footer__inner{
+        justify-content: space-around;
+        padding: 50px 0px 40px;
+    }
+    .footer__col-social{
+        min-width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 540px){
+     .footer__inner{
+        padding: 25px 0px 20px;
+    }
+    .footer__col{
+        min-width: 100%;
+        margin-top: 30px;
+    }
+}
