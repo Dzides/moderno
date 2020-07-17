@@ -34,10 +34,285 @@
    background-color: $green;
 }
 
-.header__btn-register {
+.header__btn-register,
+.header__btn-logout {
    background-color: $red;
    margin-left: 7px;
 }
+
+.header__circle {
+   &.active {
+      display: block;
+   }
+
+   display: none;
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   background: #eeecec;
+   position: relative;
+
+   &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #a0a0a0;
+      font-size: 14px;
+   }
+
+   span {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 18px;
+      right: -7px;
+      top: -7px;
+      font-size: 11px;
+      color: #fff;
+   }
+}
+
+.header__box {
+   display: flex;
+   align-items: center;
+}
+
+.notification {
+   span {
+      background-color: $yellow;
+   }
+}
+
+.message {
+   span {
+      background-color: $tomate;
+   }
+}
+
+.bascet {
+   span {
+      background-color: $green;
+   }
+}
+
+.header__btn-login--off {
+   display: none;
+}
+
+.header__btn-logout {
+   display: none;
+
+   &.header__btn-login--on {
+      display: block;
+   }
+}
+
+.user {
+   margin-left: 20px;
+   margin-right: 25px;
+   padding-right: 20px;
+   position: relative;
+
+   &::before {
+      content: "\f107";
+      position: absolute;
+      font-family: 'icomoon';
+      font-size: 16px;
+      color: #707070;
+      top: 0;
+      right: 0;
+   }
+
+   &__inner {
+      display: flex;
+      align-items: center;
+   }
+
+   &__images {
+      margin-right: 15px;
+      width: 34px;
+      height: 34px;
+      overflow: hidden;
+      border-radius: 50%;
+   }
+
+   &__info {
+      font-size: 14px;
+      line-height: 24p;
+   }
+
+   &__name {
+      @include f500;
+      color: #222;
+   }
+
+   &__money {
+      color: $green;
+      @include f700;
+   }
+}
+
+.user__menu{
+   left: 20px;
+   border: 0px solid rgb(204, 204, 204);
+   position: absolute;
+   background-color: #fff;
+   padding: 0 20px;
+   width: 158px;
+   transition: all .3s;
+   height: 0;
+   overflow: hidden;
+   top: 69px;
+   a{
+      font-size: 12px;
+      color: #546e7a;
+      margin-bottom: 15px;
+   }
+}
+
+.user__box,
+.bascet__box,
+.notification__box,
+.message__box {
+   position: relative;
+   height: 90px;
+   margin-top: 40px;
+   &:hover{
+      .user__menu{
+         height: auto;
+         border-width: 1px;
+         padding: 20px;
+         overflow: auto;
+      }
+   }
+}
+
+.circle__menu{
+   position: absolute;
+   border-top: 1px solid #e0e0e0;
+   top: 62px;
+   right: 0;
+   height: 0;
+   overflow: hidden;
+   transition: all .3s;
+}
+
+.bascet__box,
+.notification__box,
+.message__box {
+   margin-top: 54px;
+   margin-left: 17px;
+   &:hover{
+      .header__circle::before{
+         color: $bg;
+      }
+      .circle__menu{
+         overflow: hidden;
+         height: auto;
+      }
+      .circle__item{
+         padding: 23px 23px;
+         border-width: 1px;
+      }
+   }
+}
+
+.circle__item{
+   background-color: #fff;
+   border: 0px solid #e0e0e0;
+   border-left-width: 1px;
+   border-right-width: 1px;
+   border-top: none;
+   padding: 0 23px;
+   transition: all .3s;
+   display: flex;
+   align-items: center;
+   width: 269px;
+   position: relative;
+   &::before{
+      position: absolute;
+      top: 27px;
+      right: 28px;
+      color: #b0bec5;
+      font-size: 16px;
+   }
+}
+.circle__images{
+   margin-right: 15px;
+}
+
+.circle__info-name {
+@include f500;
+color: $bg;
+}
+
+.circle__info-thema {
+   @include f700;
+   font-size: 12px;
+   color: $green;
+}
+
+.circle__info-price {
+@include f500;
+color: #000;
+font-size: 16px;
+}
+.circle__info-date{
+   @include f500;
+   color: #90a4ae;
+   font-size: 10px;
+}
+
+.bascet__summ {
+   padding: 16px 17px 12px;
+   border: 1px solid #e0e0e0;
+   border-top: none;
+   background-color: #fff;
+}
+.bascet__title {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 13px;
+   padding-right: 22px;
+   margin-bottom: 15px;
+   @include f700;
+   font-size: 16px;
+   color: $bg;
+}
+
+.bascet__btn {
+   @include f700;
+   color: #fff;
+   font-size: 14px;
+   padding: 12px 5px;
+   background-color: $green;
+   text-align: center;
+   width: 100px;
+}
+.bascet__btn-checkout {
+   width: 123px;
+   margin-left: 6px;
+   background-color: #e85647;
+}
+.notification__menu,
+.message__menu{
+   .circle__images{
+      margin-right: 20px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+   }
+   .circle__info{
+      line-height: 18px;
+   }
+}
+.icons-color::before{
+   color: $tomate;
+}
+
 
 // End Header Top
 // Шапка низ start
@@ -850,7 +1125,7 @@
       padding: 0;
    }
 
-   .product__item {
+   .product__item-aside {
       box-shadow: none;
       padding-bottom: 30px;
       margin-bottom: 30px;
@@ -864,7 +1139,7 @@
       padding-bottom: 0;
    }
 
-   .product__item:first-child {
+   .product__item-aside:first-child {
       margin-top: 30px;
    }
 }
@@ -1032,7 +1307,8 @@ button.icon-unsorted {
 
    .icon-comment-o {
       padding-right: 30px;
-      &::before{
+
+      &::before {
          top: -2px;
       }
    }
@@ -1052,18 +1328,20 @@ button.icon-unsorted {
          display: block;
          font-size: 14px;
          color: #70838d;
-         margin-top: 15px;
+         margin-top: 10px;
          margin-bottom: 5px;
       }
 
       .product__item-price {
          font-size: 30px;
 
+
          span {
             display: block;
             font-size: 13px;
             color: #aeb4bb;
-            margin-top: 30px;
+            margin-top: 15px;
+            margin-left: -10px;
          }
       }
 
@@ -1072,7 +1350,7 @@ button.icon-unsorted {
       }
 
       .product__item-content {
-         padding-top: 23px;
+         padding: 18px 30px 0px;
       }
 
       .product__item-list {
@@ -1083,5 +1361,14 @@ button.icon-unsorted {
          margin-left: auto;
          margin-right: 30px;
       }
+
+      .product__item-info {
+         min-height: 60px;
+         padding: 10px 30px;
+      }
    }
 }
+
+
+
+@import 'media';
