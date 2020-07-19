@@ -35,7 +35,7 @@
                             </div>
                             <div class="header__box">
                                 <a class="bascet" href="#"></a>
-                                <a class="header__btn header__btn-login" href="#">Login</a>
+                                <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
                                 <a class="header__btn header__btn-register" href="#">Register</a>
                             </div>
 
@@ -950,6 +950,29 @@
         </footer>
 
     </div>
+
+
+
+ <!-- Popup Modal -->
+
+ <div id="modal">
+    <div class="login__wrapper">
+       <div class="login__title">
+          Login
+       </div>
+       <form>
+          <label class="login__label-name">
+             <input type="text" placeholder="Name" requared>
+          </label>
+          <label class="login__label-pass">
+             <input type="text" placeholder="Password" required>
+          </label>
+          <button type="submit">submit</button>
+          <a class="creat-acc" href="#">Creat An Account?</a>
+          <a class="lost-pass" href="#">Lost Password?</a>
+       </form>
+    </div>
+ </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
