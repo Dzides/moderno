@@ -368,14 +368,15 @@
 // End Шапка низ 
 // Start Popup Modal
 
-#modal{
+#modal {
    background-color: $green;
    max-width: 730px;
    width: 100%;
    padding-top: 90px;
    padding-bottom: 100px;
 }
-.login__title{
+
+.login__title {
    text-align: center;
    font-size: 48px;
    margin-bottom: 40px;
@@ -383,16 +384,19 @@
    text-transform: uppercase;
    @include f700;
 }
-.login__wrapper{
-   form{
+
+.login__wrapper {
+   form {
       max-width: 400px;
       margin: 0px auto;
    }
-   label{
+
+   label {
       position: relative;
       display: block;
       width: 100%;
-      &::before{
+
+      &::before {
          position: absolute;
          font-family: 'icomoon';
          font-size: 14px;
@@ -401,13 +405,16 @@
          top: 9px;
       }
    }
-   .login__label-name::before{
+
+   .login__label-name::before {
       content: "\f007";
    }
-   .login__label-pass::before{
+
+   .login__label-pass::before {
       content: "\f023";
    }
-   input{
+
+   input {
       height: 43px;
       margin-bottom: 8px;
       border: none;
@@ -417,13 +424,15 @@
       padding-left: 40px;
       display: block;
       width: 100%;
-      &::placeholder{
+
+      &::placeholder {
          color: #fff;
          font-size: 14px;
-         
+
       }
    }
-   button{
+
+   button {
       margin-top: 19px;
       padding: 18px 0 16px;
       background-color: #fff;
@@ -438,13 +447,15 @@
       cursor: pointer;
    }
 }
-.lost-pass{
+
+.lost-pass {
    display: block;
    margin-top: 20px;
    color: #fff;
    font-size: 18px;
 }
-.creat-acc{
+
+.creat-acc {
    margin-top: 19px;
    padding: 15px 0 15px 28px;
    text-align: center;
@@ -453,7 +464,8 @@
    color: #fff;
    font-size: 18px;
    position: relative;
-   &::before{
+
+   &::before {
       content: "\f044";
       font-family: 'icomoon';
       position: absolute;
@@ -461,10 +473,10 @@
       left: 35px;
    }
 }
-.fancybox-button svg path{
+
+.fancybox-button svg path {
    color: #fff;
 }
-
 
 // END Popup Modal
 // Блок поиск start
@@ -1864,19 +1876,84 @@ button.icon-unsorted {
    padding-bottom: 25px;
 }
 
-.information__line{
+.information__line {
    font-size: 14px;
    color: #70838d;
    margin-top: 20px;
    line-height: 18px;
-   span{
-     color: #263238;
-     @include f500;
+
+   span {
+      color: #263238;
+      @include f500;
    }
 }
 
 // END Product-one
+// Start 404 Page
 
+.page-404__wrapper{
+   border: 1px solid #dcdcdc;
+   background-color: #fff;
+   margin-bottom: 100px;
+}
+.page-404__head{
+   font-size: 24px;
+   color:#444;
+   padding: 23px 27px;
+   @include f500;
+   border-bottom:1px solid #dcdcdc;
+}
+.page-404__inner{
+   text-align: center;
+   background-color: $green;
+   color: #fff;
+}
+.page-404__404{
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+   font-size: 300px;
+   line-height: 300px;
+   padding-top: 70px;
+   padding-bottom: 20px;
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/page_404.png);
+      width: 150px;
+      height: 300px;
+      margin-left: 20px;
+      top: 50px;
+   }
+}
+.page-404__title {
+   margin-bottom: 30px;
+   @include f300;
+   font-size: 30px;
+   
+}
+.page-404__text {
+   max-width: 501px;
+   margin: 0 auto;
+   font-size: 18px;
+   line-height: 32px;
+   margin-bottom: 60px;
+   margin-top: 50px;
+}
+.page-404__link {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 14px;
+   color: #fff;
+   text-transform: uppercase;
+   padding: 20px 30px 16px;
+   border:1px solid #fff;
+   border-radius: 4px;
+   margin-bottom: 100px;
+}
+
+
+// END 404 Page
 
 
 
