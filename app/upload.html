@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <title>Upload Product</title>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/libs.min.css">
@@ -249,38 +249,120 @@
             </div>
          </header>
 
-                  <!--Search -->
+         <!--Search -->
 
-                  <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
-                     <div class="container">
-                        <div class="search__inner">
-                           <div class="search__inner-text">
-                              Premium WordPress Themes, Web Templates and Many More ...
-                           </div>
-                           <div class="search__inner-form">
-                              <form>
-                                 <input type="text" placeholder="Search Your Keywords . . ." requared>
-                                 <button type="submit">
-                                    <img src="images/icon/search.png" alt="SEARCH">
-                                 </button>
-                              </form>
-                           </div>
+         <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
+            <div class="container">
+               <div class="search__inner">
+                  <div class="search__inner-text">
+                     Premium WordPress Themes, Web Templates and Many More ...
+                  </div>
+                  <div class="search__inner-form">
+                     <form>
+                        <input type="text" placeholder="Search Your Keywords . . ." requared>
+                        <button type="submit">
+                           <img src="images/icon/search.png" alt="SEARCH">
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Breadcrumbs -->
+
+         <div class="breadcrumbs">
+            <div class="container">
+               <div class="breadcrumbs__inner">
+                  <ul class="breadcrumbs__list">
+                     <li><a href="#">Home</a></li>
+                     <li><span href="#">Upload Product</span></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <!-- Upload -->
+
+         <section class="upload">
+            <div class="container">
+               <form>
+                  <div class="upload__inner">
+                     <div class="upload__inner-title">Upload Your item</div>
+                     <div class="upload__inner-content">
+
+                        <div class="upload-line">
+                           <label>Select Categories <span>*</span></label>
+                           <select>
+                              <option>Select</option>
+                              <option>Select</option>
+                              <option>Select</option>
+                              <option>Select</option>
+                           </select>
                         </div>
+
+                        <div class="upload-line">
+                           <label>Product Name <span>*</span></label>
+                           <input type="text" placeholder="Enter your product name here ..." required>
+                        </div>
+
+                        <div class="upload-line upload-line-description">
+                           <label>Product Description <span>*</span></label>
+                           <textarea placeholder="<h1> Type your text  here </h1/>" required></textarea>
+                        </div>
+
+                        <div class="upload-line">
+                           <label>Upload Main File <span>*</span></label>
+                           <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                        </div>
+
+                        <div class="upload-line">
+                           <label>Upload Screenshots <span>*</span></label>
+                           <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                        </div>
+
+                        <div class="upload-line">
+                           <label>File Included <span>*</span></label>
+                           <select>
+                              <option>Select File Type</option>
+                              <option>Select File Type</option>
+                              <option>Select File Type</option>
+                              <option>Select File Type</option>
+                           </select>
+                        </div>
+
+                        <div class="upload-line">
+                           <label>File Dimensions <span>*</span></label>
+                           <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                        </div>
+
+                        <div class="upload-line">
+                           <label>Item Tags <span>*</span></label>
+                           <input type="text" placeholder="Enter Tag Here" required>
+                        </div>
+
                      </div>
-                  </section>
-         
-                  <!-- Breadcrumbs -->
-         
-                  <div class="breadcrumbs">
-                     <div class="container">
-                        <div class="breadcrumbs__inner">
-                           <ul class="breadcrumbs__list">
-                              <li><a href="#">Home</a></li>
-                              <li><span href="#">Settings</span></li>
-                           </ul>
+                     <div class="upload__inner-title">Set Your Price (US$)</div>
+
+                     <div class="upload__inner-content">
+
+                        <div class="upload-line">
+                           <label>Regular License <span>*</span></label>
+                           <input type="text" placeholder="$00.00" required>
                         </div>
+
+                        <div class="upload-line">
+                           <label>Extended License <span>*</span></label>
+                           <input type="text" placeholder="$00.00" required>
+                        </div>
+
+                        <button type="submit">Submit</button>
+
                      </div>
                   </div>
+               </form>
+            </div>
+         </section>
 
 
       </div>
