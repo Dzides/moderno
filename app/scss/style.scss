@@ -2241,12 +2241,198 @@ button.icon-unsorted {
    }
 }
 
-
-
-
-
-
 // END Settings
+// START Profile page
+
+.profile__inner{
+   display: flex;
+   margin-bottom: 30px;
+}
+.profile__aside{
+   margin-right: 30px;
+   max-width: 270px;
+   width: 100%;
+   & .footer__social-link{
+      margin-bottom: 30px;
+   }
+}
+.profile__content{
+   width: 100%;
+}
+.profile-status{
+   font-size: 13px;
+   padding: 2px 9px 0px 30px;
+   border: 1px solid #d6d6d6;
+   color: #707070;
+   position: relative;
+   &::before{
+      position: absolute;
+      content: '';
+      left: 11px;
+      top: 9px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+   }
+}
+.profile-on{
+   &::before{
+      background-color: $green;
+   }
+}
+
+.profile-off{
+  &::before{
+     background-color: $red;
+  }
+}
+.profile__aside-btn {
+   margin-bottom: 13px;
+   text-align: center;
+}
+.profile__aside-message {
+   margin-bottom: 17px;
+   display: block;
+   width: 100%;
+   font-size: 16px;
+   color: #fff;
+   @include f500;
+   background-color: $text;
+   padding: 18px 10px;
+   position: relative;
+   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+   &::before{
+      content: '\f003';
+      font-family: 'icomoon';
+      position: absolute;
+      left: 50px;
+      top: 17px;
+   }
+}
+.profile__aside-following {
+   margin-bottom: 17px;
+   display: block;
+   width: 100%;
+   font-size: 16px;
+   color: #fff;
+   @include f700;
+   background-color: $green;
+   padding: 18px 10px;
+   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+.profile__banner {
+   padding: 20px;
+   border: 1px solid #dedede;
+   background-color: #fff;
+   margin-bottom: 37px;
+}
+.profile__banner-images {
+   // background-image: url(../images/content/banner-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   min-height: 332px;
+}
+.profile__items {
+   display: flex;
+   border: 1px solid #dedede;
+}
+.profile__item {
+   width: 25%;
+   background-color: #fff;
+   text-align: center;
+   padding: 20px 5px 17px;
+   &+.profile__item{
+      border-left: 1px solid #dedede;
+   }
+}
+.profile__item-title {
+   font-size: 14px;
+   color: $bg;
+   @include f500;
+}
+.profile__item-content {
+   font-size: 14px;
+   color: #707070;
+   @include f500;
+   &.profile__item-sales{
+      color: $bg;
+   }
+}
+
+.profile-settings{
+   .product-one__tabs.settings__tabs{
+      .tabs span{
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500;
+        position: relative;
+        &.active::before{
+           color: $green;
+        }
+        &::before{
+         top: 16px;
+         position: absolute;
+         font-size: 14px;
+         font-family: 'icomoon';
+         color: #d0d0d0;
+        }
+      }
+   } 
+}
+.personal-box{
+   background-color: #fff;
+   padding: 35px 40px 25px;
+   border: 1px solid #dedede;
+}
+
+.personal-box__title {
+   margin-bottom: 25px;
+   @include f700;
+   color: $bg;
+   font-size: 20px;
+}
+.personal-box__text {
+   margin-bottom: 20px;
+   p{
+      color: #707070;
+   }
+}
+// .personal-box__items {
+// }
+// .personal-box__item {
+// }
+
+.personal-box__item-head {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 16px;
+}
+.personal-box__item-name {
+   @include f500;
+   font-size: 16px;
+   color: $bg;
+   font-style: italic;
+}
+.personal-box__item-number {
+   @include f700;
+   font-size: 16px;
+   color: $bg;
+}
+.personal-box__item-line {
+   height: 15px;
+   background-color: #f4f4f4;
+   border-radius: 3px;
+   margin-bottom: 23px;
+   span{
+      display: block;
+      border-radius: 3px;
+      height: 15px;
+      background-image: url(../images/skills.jpg);
+      background-repeat: repeat;
+   }
+}
+
+// END Profile page
 
 
 
