@@ -1,3 +1,25 @@
+@media (max-width: 1200px) {
+    .withdrawals__inner {
+        display: block;
+    }
+
+    .withdrawals__col {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .withdrawals__content-item {
+        max-width: 490px;
+    }
+    .contact__form-row{
+        display: block;
+    }
+    .contact__form input{
+        width: 100%;
+    }
+
+}
+
 @media (max-width: 1150px) {
     .footer__inner {
         flex-wrap: wrap;
@@ -11,11 +33,28 @@
             display: block;
         }
     }
-}
-
-@media (max-width: 1000px) {
     .header__text {
         display: none;
+    }
+}
+
+@media (max-width: 1020px) {
+    .product-one__tabs.settings__tabs{
+        display: block;
+    }
+    .product-one__tabs.settings__tabs .tabs{
+        margin-bottom: 20px;
+    }
+    .product-one__tabs.settings__tabs .tabs{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .page-404__404::after {
+        width: 50px;
+        height: 97px;
+        background-size: cover;
     }
 }
 
@@ -28,6 +67,26 @@
     .footer__col-social {
         min-width: 100%;
         margin-top: 30px;
+    }
+
+    .contact__box{
+        display: block;
+    }
+    .profile__inner{
+        flex-direction: column;
+    }
+    .profile__content{
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .profile__aside{
+        max-width: 100%;
+        .aside__item{
+            width: 100%;
+        }
+    }
+    .profile__aside-btn{
+        width: 300px;
     }
 }
 
@@ -43,7 +102,7 @@
         text-align: center;
         padding-bottom: 30px;
 
-        a{
+        a {
             display: block;
             padding: 10px 0;
             border-bottom: 1px solid $grey;
@@ -51,10 +110,12 @@
 
         li {
             display: block;
-            &+li{
+
+            &+li {
                 margin-left: 0;
             }
-            &:first-child{
+
+            &:first-child {
                 border-top: 1px solid $grey;
             }
         }
@@ -74,6 +135,39 @@
             }
         }
     }
+    .upload-line{
+        display: block;
+        label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    } 
+    .upload__inner button{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 740px) {
+    .page-404__404 {
+        font-size: 200px;
+        line-height: 200px;
+    }
+
+    .page-404__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .page-404__text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .page-404__link {
+        padding: 10px 30px 8px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -86,6 +180,81 @@
     .circle__menu {
         right: auto;
     }
+
+    .profile__banner-images{
+        min-height: 245px;
+    }
+    .profile__items{
+        display: block;
+    }
+    .profile__item{
+        width: 100%;
+    }
+    .profile__item+.profile__item{
+        border-left: none;
+        border-top: 1px solid #dedede;
+    }
+    .profile__banner{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-404__inner {
+        padding: 0 15px;
+    }
+
+    .page-404__404 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .page-404__404::after {
+        content: '';
+        margin-left: 0;
+        top: 16px;
+        right: 0;
+    }
+
+    .upload__inner-content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .upload__inner-title{
+        padding: 16px 10px 18px;
+    }
+    .settings__line{
+        display: block;
+        label{
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+    .page-box__content {
+        padding: 20px 10px 50px;
+    }
+    .page-box__title {
+        padding: 18px 10px;
+    }
+    .contact__inner{
+        padding: 35px 10px 15px;
+    }
+    .contact__head{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contact__map iframe{
+        height: 300px;
+    }
+    .container{
+        padding: 0 8px;
+    }
+    .personal-box{
+        padding: 35px 10px 25px;
+    }
+    .profile__aside-btn{
+        width: 280px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -97,12 +266,22 @@
         min-width: 100%;
         margin-top: 30px;
     }
+
+    .withdrawals__content {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .withdrawals__content-items {
+        overflow-x: scroll;
+    }
+
+    .withdrawals__content-item {
+        min-width: 490px;
+    }
 }
 
 @media (max-width: 520px) {
-    // .header {
-    //     overflow: hidden;
-    // }
     .menu__list {
         top: 70px;
     }
@@ -192,6 +371,14 @@
     .user__images {
         margin-right: 0;
     }
+
+    .about__head {
+        padding: 23px 10px;
+    }
+
+    .about__inner {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -213,9 +400,10 @@
         margin-left: 0;
     }
 
-    .user{
+    .user {
         margin-right: 10px;
     }
+
     .bascet {
         margin-right: 10px;
     }
