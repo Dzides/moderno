@@ -20,7 +20,7 @@
     "gulp-uglify": "^3.0.2",
     "ion-rangeslider": "^2.3.1",
     "jquery-form-styler": "^2.0.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
